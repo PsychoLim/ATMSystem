@@ -17,10 +17,7 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public void AddMoney(int value)
     {
         playerMoney += value;
