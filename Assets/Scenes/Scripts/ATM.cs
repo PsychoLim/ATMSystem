@@ -8,7 +8,7 @@ public class ATM : MonoBehaviour
     public GameObject selectButtons;
     public GameObject depositWindow;
     public GameObject withdrawWindow;
-    // public GameObject noenWindow;
+    public GameObject noMoneyWindow;
     public Text moneyText;
     public List<InputField> moneyInputField;
 
@@ -17,17 +17,10 @@ public class ATM : MonoBehaviour
 
     private Player player;
 
-    // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<Player>();
         UpdateATMMoney();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void DepositInputMoney() // InputField¸¦ »ç¿ëÇÑ ÀÔ±Ý 
@@ -48,6 +41,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
     public void WithdrawInputMoney() // InputField¸¦ »ç¿ëÇÑ Ãâ±Ý 
@@ -68,6 +62,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
 
@@ -83,6 +78,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
     public void Deposit30000()
@@ -97,6 +93,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
     public void Deposit50000()
@@ -111,6 +108,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
 
@@ -129,6 +127,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
     public void Withdraw30000()
@@ -143,6 +142,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
     public void Withdraw50000()
@@ -157,6 +157,7 @@ public class ATM : MonoBehaviour
         else
         {
             // ¾ÈµÆÀ»¶§ Ã¢
+            noMoneyWindow.SetActive(true);
         }
     }
 
@@ -178,6 +179,7 @@ public class ATM : MonoBehaviour
         selectButtons.SetActive(true);
         depositWindow.SetActive(false);
         withdrawWindow.SetActive(false);
+        noMoneyWindow.SetActive(false);
     }
     
     private void UpdateATMMoney()
