@@ -5,14 +5,15 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    private int currentCash;
+    public Text moneyText;
+    public int playerMoney = 100000;
 
     
 
     // Start is called before the first frame update
     void Start()
     {
-        currentCash = 100000;
+        UpdateMoney();
     }
 
     // Update is called once per frame
@@ -20,8 +21,21 @@ public class Player : MonoBehaviour
     {
         
     }
+    public void AddMoney(int value)
+    {
+        playerMoney += value;
+        UpdateMoney();
+    }
 
+    public void SubtractMoney(int value)
+    {
+        playerMoney -= value;
+        UpdateMoney();
+    }
 
-
+    private void UpdateMoney()
+    {
+        moneyText.text = playerMoney.ToString();
+    }
 
 }

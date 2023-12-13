@@ -738,6 +738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 231565111}
+  - component: {fileID: 231565112}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -761,6 +762,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &231565112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231565110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58fc13b22c7394846bce4915ef72f532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moneyText: {fileID: 1777587805}
+  playerMoney: 100000
 --- !u!1 &232373990
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,7 +812,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &232373992
 MonoBehaviour:
@@ -924,7 +939,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 280759404}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Withdraw50000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &280759404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1220,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 362202067}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Deposit50000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &362202067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1354,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 390519053}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: BackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &390519053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1437,7 +1488,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 393049219}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: WithdrawButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &393049219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1622,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 417200714}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: WithdrawInputMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &417200714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2015,7 +2090,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 557209185}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Withdraw30000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &557209185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2137,7 +2224,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 582409738}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Deposit10000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582409738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2224,6 +2323,10 @@ MonoBehaviour:
   selectButtons: {fileID: 531435192}
   depositWindow: {fileID: 1727756940}
   withdrawWindow: {fileID: 462779148}
+  moneyText: {fileID: 1834210533}
+  moneyInputField:
+  - {fileID: 341052020}
+  - {fileID: 1492917104}
 --- !u!1 &689888987
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2650,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 815621273}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: BackButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &815621273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +2784,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 874366268}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Deposit30000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &874366268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3005,7 +3132,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1030009157}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: DepositInputMoney
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1030009157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3925,7 +4064,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1496404184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 620845619}
+        m_TargetAssemblyTypeName: ATM, Assembly-CSharp
+        m_MethodName: Withdraw10000
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1496404184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4000,7 +4151,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 30}
+  m_SizeDelta: {x: 50, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1498789816
 MonoBehaviour:
@@ -4035,7 +4186,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uC785\uAE08"
+  m_Text: "\uCD9C\uAE08"
 --- !u!222 &1498789817
 CanvasRenderer:
   m_ObjectHideFlags: 0
